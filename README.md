@@ -1,4 +1,4 @@
-# UnrealHero.nvim
+Hero.nvim
 
 Personhal Nvim configuration
 
