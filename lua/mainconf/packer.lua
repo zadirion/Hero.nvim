@@ -137,6 +137,15 @@ return require('packer').startup(function(use)
   use { "Rigellute/shades-of-purple.vim" }
   use { "hachy/eva01.vim" }
   use { "senran101604/neotrix.vim" }
+  use { "vimwiki/vimwiki" }
+
+  vim.g.vimwiki_list = {
+      {
+          path = '~/vimwikimd',
+          syntax = 'markdown',
+          ext = 'md'
+      }
+  }
 
   -- My plugin, always latest commit
   use {'zadirion/Unreal.nvim',
