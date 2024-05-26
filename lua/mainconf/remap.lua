@@ -1,6 +1,14 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- insert current datetime
+vim.keymap.set("n", "<F3>", "i<C-R>=strftime(\"%Y-%m-%d %a %I:%M:%S %p\")<CR><Esc>")
+vim.keymap.set("i", "<F3>", "<C-R>=strftime(\"%Y-%m-%d %a %I:%M:%S %p\")<CR>")
+
+-- useful for creating unique ids based on the current second
+vim.keymap.set("n", "<F4>", "i<C-R>=strftime(\"%Y%m%d%H%M%S\")<CR><Esc>")
+vim.keymap.set("i", "<F4>", "<C-R>=strftime(\"%Y%m%d%H%M%S\")<CR>")
+
 -- move text around in visual mode with J and K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

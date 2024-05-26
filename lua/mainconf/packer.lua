@@ -143,7 +143,8 @@ return require('packer').startup(function(use)
       {
           path = '~/vimwikimd',
           syntax = 'markdown',
-          ext = 'md'
+          ext = 'md',
+          links_space_char = '_'
       }
   }
 
