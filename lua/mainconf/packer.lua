@@ -25,7 +25,8 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
       requires = {
           { 'nvim-lua/plenary.nvim', commit="50012918b2fc8357b87cff2a7f7f0446e47da174"},
-          { 'BurntSushi/ripgrep', commit="7099e174acbcbd940f57e4ab4913fee4040c826e"}
+          { 'BurntSushi/ripgrep', commit="7099e174acbcbd940f57e4ab4913fee4040c826e"},
+          { 'nvim-telescope/telescope-live-grep-args.nvim'}
       }
   }
 

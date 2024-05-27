@@ -36,6 +36,7 @@ vim.g.UltiSnipsJumpOrExpandTrigger = "<tab>"
 vim.g.UltiSnipsJumpForwardTrigger = "<c-b>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<S-Tab>"
 vim.g.UltiSnipsEditSplit = "vertical"
+vim.g.vimwiki_folding = "syntax"
 -- end globals
 require("mainconf.packer")
 require("mainconf.packer_getcommit")
