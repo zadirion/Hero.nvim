@@ -138,7 +138,9 @@ return require('packer').startup(function(use)
   use { "Rigellute/shades-of-purple.vim" }
   use { "hachy/eva01.vim" }
   use { "senran101604/neotrix.vim" }
-  use { "vimwiki/vimwiki" }
+  -- this is my personal fork that fixes vimwiki link generation 
+  -- when using markdown
+  use { "zadirion/vimwiki" }
 
   vim.g.vimwiki_list = {
       {
