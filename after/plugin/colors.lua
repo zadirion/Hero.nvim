@@ -1,7 +1,7 @@
 
 function ColorMyPencils(color)
 	color = color or "rose-pine"
-	vim.cmd.colorscheme(color)
+	--vim.cmd.colorscheme(color)
 
 -- neovide specific settings
 vim.g.neovide_fullscreen = true

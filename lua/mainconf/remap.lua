@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- insert current datetime
 vim.keymap.set("n", "<F3>", "i<C-R>=strftime(\"%Y-%m-%d %a %I:%M:%S %p\")<CR><Esc>")

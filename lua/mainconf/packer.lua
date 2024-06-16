@@ -19,13 +19,13 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use { 'wbthomason/packer.nvim', commit = "ea0cc3c59f67c440c5ff0bbe4fb9420f4350b9a3"}
+  use { 'wbthomason/packer.nvim'}
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
       requires = {
           { 'nvim-lua/plenary.nvim', commit="50012918b2fc8357b87cff2a7f7f0446e47da174"},
-          { 'BurntSushi/ripgrep', commit="7099e174acbcbd940f57e4ab4913fee4040c826e"},
+          { 'BurntSushi/ripgrep'},
           { 'nvim-telescope/telescope-live-grep-args.nvim'}
       }
   }
@@ -39,32 +39,29 @@ return require('packer').startup(function(use)
 	  end,
 	  }
 
-  use { 'nvim-treesitter/playground' , commit="ba48c6a62a280eefb7c85725b0915e021a1a0749"}
-  use { 'ThePrimeagen/harpoon', commit="c1aebbad9e3d13f20bedb8f2ce8b3a94e39e424a" }
+  use { 'nvim-treesitter/playground'}
+  use { 'ThePrimeagen/harpoon'}
   use { 'ThePrimeagen/refactoring.nvim',
-    commit="bebfcfcc4b604d3647fcce2f4aeb02a95d139c49",
     requires = {
         {"nvim-lua/plenary.nvim"},
         {"nvim-treesitter/nvim-treesitter"}
     }
   }
-  use { 'mbbill/undotree', commit="0e11ba7325efbbb3f3bebe06213afa3e7ec75131" }
-  use { 'kikito/inspect.lua', commit="8686162bce74913c4d3a577e7324642ddc4e21c0"}
+  use { 'mbbill/undotree'}
+  use { 'kikito/inspect.lua'}
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
-      commit = "22d2186bee730d68f6fd3bb2d19a389784c37a96",
 	  requires = {
 		  --- Uncomment these if you want to manage LSP servers from neovim
-		  {'williamboman/mason.nvim', commit="cd7835b15f5a4204fc37e0aa739347472121a54c"},
-		  {'williamboman/mason-lspconfig.nvim', commit="e7b64c11035aa924f87385b72145e0ccf68a7e0a"},
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
 
 		  -- LSP Support
-		  {'neovim/nvim-lspconfig', commit="2a101fb00e6f6eb29c230736b99f05c3b3192b94"},
+		  {'neovim/nvim-lspconfig'},
 		  -- Autocompletion
           {
               'hrsh7th/nvim-cmp', 
-              commit="5dce1b778b85c717f6614e3f4da45e9f19f54435",
               requires = {
                   "quangnguyen30192/cmp-nvim-ultisnips",
                   config = function()
