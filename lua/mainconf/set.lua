@@ -32,4 +32,5 @@ vim.api.nvim_set_var('netrw_localmovecmd', 'cmd.exe /c move')
 
 if os.getenv("SHELL") then
 vim.opt.shellcmdflag = "-c"
+vim.opt.shellxquote=""
 end

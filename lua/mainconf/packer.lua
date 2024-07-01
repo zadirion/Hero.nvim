@@ -31,13 +31,13 @@ return require('packer').startup(function(use)
   }
 
   use {
-	  'nvim-treesitter/nvim-treesitter',
-	  tag = 'v0.9.2',
-	  run = function()
-		  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-		  ts_update()
-	  end,
-	  }
+          'nvim-treesitter/nvim-treesitter',
+          tag = 'v0.9.2',
+          run = function()
+        	  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        	  ts_update()
+          end,
+          }
 
   use { 'nvim-treesitter/playground'}
   use { 'ThePrimeagen/harpoon'}
@@ -135,6 +135,8 @@ return require('packer').startup(function(use)
   use { "Rigellute/shades-of-purple.vim" }
   use { "hachy/eva01.vim" }
   use { "senran101604/neotrix.vim" }
+  use { "mfussenegger/nvim-dap" }
+
   -- this is my personal fork that fixes vimwiki link generation 
   -- when using markdown
   use { "zadirion/vimwiki" }
